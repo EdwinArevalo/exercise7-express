@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="icon" href="/images/logo.png">
+        <link rel='stylesheet' href='/stylesheets/style.css' />
+    <title>Ejercicio</title>
+</head>
+<body>
+        <div class="card">
+                <div class="col-md-4 mx-auto">
+                <div class="card-body mx-auto">
+                    <h4 class="card mt-4 text-center"><strong>Detalle</strong>  </h4>
+                  <h5 class="card-title">Curso: <%= inscription.course %></h5>
+                  <p class="card-text">Modulos: <%= inscription.modules %></p>
+                  <a href="#" class="card-link">Monto: S/.<%= inscription.amount %></a>
+                  <a href="#" class="card-link">Pago: <%= inscription.paymentType %></a>
+                </div>
+                
+        </div>
+        </div>
+</body>
+</html>
