@@ -1,14 +1,15 @@
 <div class="container">
   <h1>Cursos Pago</h1>
-  <form>
+  <form action="/courses/pay" method="POST">
+    <h5>10% de descuento al pago en efectivo.</h5>
     <div class="form-row align-items-center">
       <div class="form-check form-check-inline">
-        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
-        <label class="form-check-label" for="inlineRadio1">Crédito</label>
+        <input class="form-check-input" type="radio" name="type" id="inlineRadio1" value="Effective" checked>
+        <label class="form-check-label" for="inlineRadio1">Efectivo</label>
       </div>
       <div class="form-check form-check-inline">
-        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
-        <label class="form-check-label" for="inlineRadio2">Tarjeta</label>
+        <input class="form-check-input" type="radio" name="type" id="inlineRadio2" value="CreditCard">
+        <label class="form-check-label" for="inlineRadio2">Tarjeta de crédito</label>
       </div>
       <div class="col-auto my-1">
         <button type="submit" class="btn btn-primary">Enviar</button>
